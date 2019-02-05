@@ -9,17 +9,9 @@
 
     <title>Angular JS Practice</title>
   </head>
-  <body ng-init="color1 = 'orange';color2 = 'red'">
-    <input
-      type="text"
-      name=""
-      id=""
-      placeholder="Enter youor fav meal"
-      ng-model="favMeal"
-    />
-    <p>
-      Your Favourite Meal is : <span class="{{ color1 }}">{{ favMeal }}</span>
-    </p>
-    <p class="{{ color2 }}">Your Favourite Meal is : {{ favMeal }}</p>
+  <body ng-init="ninjas=['sandhya','megha','bihari']">
+    <ul>
+      <li ng-repeat="names in ninjas">{{ names }}</li>
+    </ul>
   </body>
 </html>
