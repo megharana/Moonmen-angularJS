@@ -25,7 +25,7 @@
   </head>
   <body ng-init="ninjas=['sandhya','megha','bihari', 'reshma']">
     <ul>
-      <li id="id_{{ names }}" ng-repeat="names in ninjas">{{ names }}</li>
+      <li ng-repeat="names in ninjas">{{ names }}</li>
     </ul>
     <button onclick="colorChange()">Click to Change color</button>
   </body>
